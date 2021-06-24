@@ -22,8 +22,7 @@ class swagger extends Middleware
             $name = 'api';
             $description = '';
             $version = '1.0.0';
-
-            $dirCheck = file_get_contents(__DIR__ . '/../../../composer.json');
+            $dirCheck = file_get_contents(JK_SITE_PATH() . 'composer.json');
             if ($dirCheck) {
                 $jsonDecode = json_decode($dirCheck, JSON_UNESCAPED_UNICODE);
                 if (!empty($jsonDecode['name'])) {
