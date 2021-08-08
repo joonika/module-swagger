@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "require": {
-    "zircote/swagger-php": "dev-master"
+    "zircote/swagger-php": "*"
   },
   "authors": [
     {
